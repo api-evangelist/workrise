@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of workrise.com / rigup.com / accounts.rigup.com hosts
+notes: workrise.com 301-redirects to www.rigup.com (the company returned to the RigUp
+  brand in September 2024). accounts.rigup.com is the platform identity host (Auth0
+  custom domain) and publishes OIDC discovery.
+hosts:
+- host: https://www.rigup.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://www.workrise.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://accounts.rigup.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: workrise-openid-configuration.json

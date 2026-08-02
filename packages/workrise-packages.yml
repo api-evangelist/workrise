@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: npm registry search + github.com/rigup org inventory
+notes: RigUp (Workrise) publishes no client SDK for a public API - it has no public
+  API surface. Its engineering org (github.com/rigup, opensource@rigup.co) ships one
+  registry package, a NestJS GraphQL utility library used internally, plus open-source
+  tooling (ephemeral-iam GCP CLI, terraform modules) distributed from GitHub only.
+  No first-party packages found on PyPI, Maven Central, NuGet, RubyGems, Packagist,
+  or crates.io (pypi.org/project/rigup is an unrelated third-party project).
+packages:
+- language: typescript
+  registry: npm
+  name: nest-graphql-utils
+  url: https://www.npmjs.com/package/nest-graphql-utils
+  install: npm install nest-graphql-utils
+  official: true
+  description: A collection of GraphQL utilities for NestJS apps (author RigUp,
+    maintainer rigup-eng, repo github.com/rigup/nest-graphql-utils). An internal-platform
+    utility library, not an API client SDK.

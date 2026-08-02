@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://trust.rigup.com/
+platform: vanta
+title: RigUp Trust Center
+certifications: []
+notes: Live Vanta-hosted trust center at trust.rigup.com (HTTP 200; trust.workrise.com
+  responds 403). The page is fully client-rendered by the Vanta trust-report app, so
+  named certifications could not be extracted server-side and are left empty rather
+  than guessed. Page description - "We craft software and services that streamline
+  field operations, from sourcing to payments."
+evidence:
+- source: https://trust.rigup.com/
+  kind: trust-center-page
+  detail: 'HTTP 200; <title>RigUp Trust Center</title>; meta keywords "Trust, Security,
+    Compliance, Automation"; served by assets.vanta.com trust-report app (slugid
+    9ly95ewea2ps6sg94mtnc1)'
