@@ -7,6 +7,17 @@ description: Workrise - which returned to its original RigUp brand in September 
   a16z and Founders Fund. The company publishes no public developer portal or API
   documentation; platform access is through accounts.rigup.com (OpenID Connect via
   Auth0), and its engineering org open-sources utilities at github.com/rigup.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
